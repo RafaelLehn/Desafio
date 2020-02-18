@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import UIKit
+
+class carrinhoViewController: UIViewController {
+
+    
+    @IBAction func closeView(_ sender: Any) {
+        tabBarController?.selectedIndex = 0
+    }
+    
+    @IBAction func products(_ sender: Any) {
+        tabBarController?.selectedIndex = 1
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+}
